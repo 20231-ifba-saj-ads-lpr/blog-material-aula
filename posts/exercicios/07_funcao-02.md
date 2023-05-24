@@ -6,7 +6,7 @@ tag:
 category:
   - exercicio
 ---
-# Exercício 06 Funcão 02
+# Exercício 06 Função 02
 
 1. Elabore uma função que receba como parâmetro um valor inteiro `n` e gere como saída um triângulo lateral formado por asteriscos conforme o exemplo a seguir, em que usamos `n = 4`.
 ```shell

@@ -6,7 +6,7 @@ tag:
 category:
   - exercicio
 ---
-# Exercício 05 Funcão 01
+# Exercício 05 Função 01
 
 1. Escreva uma função que receba por parâmetro uma temperatura em graus Fahrenheit e a retorne convertida em graus Celsius. A fórmula de conversão é:
 $$

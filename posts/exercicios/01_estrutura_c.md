@@ -9,7 +9,7 @@ category:
   - exercicio
 ---
 
-# Exercícios Entrada e Saida em C
+# Exercício 01 Entrada e Saida em C
 
 [^SOFFNER]
 

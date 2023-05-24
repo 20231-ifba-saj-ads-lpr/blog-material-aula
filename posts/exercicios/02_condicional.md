@@ -8,7 +8,7 @@ category:
   - exercicio
 ---
 
-# Exercícios Condicional
+# Exercício 02 Condicional
 
 Crie um arquivo q\<numero\>.c para cada questão
 

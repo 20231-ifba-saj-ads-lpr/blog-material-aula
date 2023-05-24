@@ -1,6 +1,6 @@
 ---
 icon: edit
-date: 2023-05-02 21:30:00.00 -3
+date: 2023-05-2e 21:30:00.00 -3
 tag:
   - funcao
 category:

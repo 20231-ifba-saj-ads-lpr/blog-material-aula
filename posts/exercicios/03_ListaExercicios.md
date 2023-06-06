@@ -300,6 +300,17 @@ star: true
     $$
 1. Escreva um programa que leia certa quantidade de números, imprima o maior  deles e quantas vezes o maior número foi lido. A quantidade de números a serem lidos deve ser fornecida pelo usuário.
 
+
+## Vetores e Matrizes
+
+1. Crie um programa que leia do teclado seis valores inteiros e em seguida mostra na  tela os valores lidos.
+1. Crie um programa que leia do teclado seis valores inteiros e em seguida mostre na  tela os valores lidos na ordem inversa.
+1. Faça um programa que leia cinco valores e os armazene em um vetor. Em seguida,  mostre todos os valores lidos juntamente com a média dos valores.
+<!--
+1. Faça um programa que leia 10 números, armazene os 5 primeiros em um vetor, os 5 ultimos em outro vetor e depois troque do valores entre os dois vetores.
+2. Faça um programa que leia 5 números, armazenando em vetor, ordene esse vetor em ordem crescente.
+-->
+
 ## Referências
 
 <!-- @include: ../../bib/bib.md -->

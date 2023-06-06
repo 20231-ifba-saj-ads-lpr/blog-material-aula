@@ -314,3 +314,10 @@ star: true
 ## Referências
 
 <!-- @include: ../../bib/bib.md -->
+
+## Novos CodeSpaces
+
+- Criar um repositório baseado no template abaixo:
+
+[https://github.com/20231-ifba-saj-ads-lpr/codespace-cpp-template](https://github.com/20231-ifba-saj-ads-lpr/codespace-cpp-template)
+

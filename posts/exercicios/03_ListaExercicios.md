@@ -301,15 +301,28 @@ star: true
 1. Escreva um programa que leia certa quantidade de números, imprima o maior  deles e quantas vezes o maior número foi lido. A quantidade de números a serem lidos deve ser fornecida pelo usuário.
 
 
-## Vetores e Matrizes
+## Vetores
 
 1. Crie um programa que leia do teclado seis valores inteiros e em seguida mostra na  tela os valores lidos.
 1. Crie um programa que leia do teclado seis valores inteiros e em seguida mostre na  tela os valores lidos na ordem inversa.
 1. Faça um programa que leia cinco valores e os armazene em um vetor. Em seguida,  mostre todos os valores lidos juntamente com a média dos valores.
+
+
+
 <!--
-1. Faça um programa que leia 10 números, armazene os 5 primeiros em um vetor, os 5 ultimos em outro vetor e depois troque do valores entre os dois vetores.
-2. Faça um programa que leia 5 números, armazenando em vetor, ordene esse vetor em ordem crescente.
+1. Faça um programa que leia uma palavra de 10 letras e transforme todos os caracteres para maiúsculo.
 -->
+
+## Matrizes
+
+1. Faça um programa que leia uma matriz de tamanho `3 × 3`. Imprima na tela o menor valor contido nessa matriz.
+1. Faça um programa que leia uma matriz de tamanho `4 × 4`. Imprima na tela o maior valor contido nessa matriz e a sua localização (linha e coluna).
+1. Faça um programa que declare uma matriz de tamanho `5 × 5`. Preencha com 1 a  diagonal principal e com 0 os demais elementos. Ao final, escreva a matriz obtida  na tela.
+1. Leia uma matriz de tamanho `4 × 4`. Em seguida, conte e escreva na tela quantos valores maiores do que 10 ela possui.
+1. Leia uma matriz de tamanho `4 × 4`. Em seguida, conte e escreva na tela quantos valores negativos ela possui.
+1. Leia uma matriz de tamanho `3 × 3`. Em seguida, imprima a soma dos valores contidos em sua diagonal principal.
+1. Leia uma matriz de tamanho `3 × 3`. Em seguida, imprima a soma dos valores contidos em sua diagonal secundária.
+1. Calcular e imprimir na tela uma matriz de tamanho `10 × 10`, em que seus elementos são da forma:
 
 ## Referências
 

@@ -323,6 +323,13 @@ star: true
 1. Leia uma matriz de tamanho `3 × 3`. Em seguida, imprima a soma dos valores contidos em sua diagonal principal.
 1. Leia uma matriz de tamanho `3 × 3`. Em seguida, imprima a soma dos valores contidos em sua diagonal secundária.
 1. Calcular e imprimir na tela uma matriz de tamanho `10 × 10`, em que seus elementos são da forma:
+    $A[i][j] = 2i + 7j – 2\space (se \space i < j)$
+    $A[i][j] = 3i^2 – 1 \space (se \space i = j)$
+    $A[i][j] = 4i^3 + 5j^2 + 1\space (se\space i > j)$
+1. Faça um programa que permita ao usuário entrar com uma matriz de tamanho `3  × 3` de números inteiros. Em seguida, calcule um vetor contendo três posições, em  que cada posição deverá armazenar a soma dos números de cada coluna da matriz.  Exiba na tela esse array. Por exemplo, a matriz
+    $$\begin{bmatrix}5 & -8 & 10\\1 & 2 & 15\\25 & 10 & 7 \end{bmatrix}$$
+    deverá gerar o vetor
+    $$\begin{bmatrix}31 & 4 & 32\end{bmatrix}$$
 
 ## Referências
 

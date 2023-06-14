@@ -316,12 +316,113 @@ star: true
 ## Matrizes
 
 1. Faça um programa que leia uma matriz de tamanho `3 × 3`. Imprima na tela o menor valor contido nessa matriz.
+    ::: details 
+    ```c
+    #include <stdio.h>
+    #define count 3
+    int main(int argc, char const *argv[]){
+        int mat[count][count] = {
+            {-10,-2,-3},      // 0,0     0,1       0,2
+            {-4,-5,-6000},    // 1,0     1,1       1,2
+            {-7,-8,-1000}     // 2,0     2,1       2,2
+        };   
+        int menorValor = mat[0][0];
+        for (size_t i = 0; i < count; i++){
+            for (size_t j = 0; j < count; j++){                
+                if(mat[i][j]<menorValor){
+                    menorValor = mat[i][j];
+                }
+            }  
+        }
+        printf("O maior valor é %d ", menorValor);
+        return 0;
+    }
+    ```
+    :::    
 1. Faça um programa que leia uma matriz de tamanho `4 × 4`. Imprima na tela o maior valor contido nessa matriz e a sua localização (linha e coluna).
+    ::: details 
+    ```c
+        #include <stdio.h>
+        #define count 4
+        int main(int argc, char const *argv[]){
+        int mat[count][count] = {
+            {10,2,3,-3},         // 0,0   0,1   0,2    0,3
+            {-4,5,-6000,6000},   // 1,0   1,1   1,2    1,3
+            {-4,5,-6000,6000},   // 2,0   2,1   2,2    2,3
+            {7,-8,1000,1000}     // 3,0   3,1   3,2    3,3
+        };   
+        int maiorValor = mat[0][0];
+        int maiorValorI = 0;
+        int maiorValorJ = 0;
+        for (size_t i = 0; i < count; i++){
+            for (size_t j = 0; j < count; j++){
+                //printf("Valor %d em mat[%d][%d] \n ", mat[i][j], i, j);
+                if(mat[i][j]>maiorValor){
+                    maiorValor = mat[i][j];
+                    maiorValorI= i;
+                    maiorValorJ= j;
+                }
+            }  
+        }
+        printf("O maior valor é %d na linha %d, na coluna %d\n\n\n\n\n", maiorValor, maiorValorI, maiorValorJ);
+        return 0;
+    }
+    ```
+    :::    
 1. Faça um programa que declare uma matriz de tamanho `5 × 5`. Preencha com 1 a  diagonal principal e com 0 os demais elementos. Ao final, escreva a matriz obtida  na tela.
 1. Leia uma matriz de tamanho `4 × 4`. Em seguida, conte e escreva na tela quantos valores maiores do que 10 ela possui.
 1. Leia uma matriz de tamanho `4 × 4`. Em seguida, conte e escreva na tela quantos valores negativos ela possui.
 1. Leia uma matriz de tamanho `3 × 3`. Em seguida, imprima a soma dos valores contidos em sua diagonal principal.
+    ::: details 
+    ```c
+    #include <stdio.h>
+    #define count 3
+    int main(int argc, char const *argv[]){
+        int mat[count][count] = {
+            {-10,-2,-3},      // 0,0     0,1       0,2
+            {-4,-5,-6000},    // 1,0     1,1       1,2
+            {-7,-8,-1000}     // 2,0     2,1       2,2
+        };   
+        int somaDiagonalPrincipal = 0;
+        for (int i = 0; i < count; i++){
+            for (int j = 0; j < count; j++){
+                if(i == j){
+                    somaDiagonalPrincipal += mat[i][j];
+                }
+            }  
+        }
+        printf("Somatorio da Diagonal Principal %d\n\n\n\n", somaDiagonalPrincipal);
+        return 0;
+    }
+    ```
+    :::    
 1. Leia uma matriz de tamanho `3 × 3`. Em seguida, imprima a soma dos valores contidos em sua diagonal secundária.
+    ::: details 
+    ```c
+    #include <stdio.h>
+    #define count 3
+    int main(int argc, char const *argv[]){
+        int mat[count][count] = {
+            {-10,-2,-3},      // 0,0     0,1       0,2
+            {-4,-5,-6000},    // 1,0     1,1       1,2
+            {-7,-8,-1000}     // 2,0     2,1       2,2
+        };   
+        int somaDiagonalSecundaria = 0;
+        for (int i = 0; i < count; i++){
+            for (int j = 0; j < count; j++){
+                if(i == j){
+                    somaDiagonalPrincipal += mat[i][j];
+                }
+                if(i+j == count-1){
+                    somaDiagonalSecundaria += mat[i][j];
+                }
+            }  
+        }
+        printf("Somatorio da Diagonal Secundaria %d\n\n\n\n", somaDiagonalSecundaria);
+        return 0;
+    }
+    ```
+    :::    
 1. Calcular e imprimir na tela uma matriz de tamanho `10 × 10`, em que seus elementos são da forma:
     $$A[i][j] = 2i + 7j – 2\space (se \space i < j)$$
     $$A[i][j] = 3i^2 – 1 \space (se \space i = j)$$

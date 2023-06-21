@@ -306,9 +306,59 @@ star: true
 1. Crie um programa que leia do teclado seis valores inteiros e em seguida mostra na  tela os valores lidos.
 1. Crie um programa que leia do teclado seis valores inteiros e em seguida mostre na  tela os valores lidos na ordem inversa.
 1. Faça um programa que leia cinco valores e os armazene em um vetor. Em seguida,  mostre todos os valores lidos juntamente com a média dos valores.
+1. Faça um programa que possua um array de nome A que armazene seis números inteiros. O programa deve executar os seguintes passos:
+   1. Atribua os seguintes valores a esse array: 1, 0, 5, −2, −5, 7
+   2. Armazene em uma variável a soma dos valores das posições A[0], A[1] e A[5] do array e mostre na tela essa soma.
+   3. Modifique o array na posição 4, atribuindo a essa posição o valor 100.
+   4. Mostre na tela cada valor do array A, um em cada linha.
+1. Faça um programa que leia um vetor de oito posições. Em seguida, leia também dois  valores X e Y quaisquer correspondentes a duas posições no vetor. Seu programa  deverá exibir a soma dos valores encontrados nas respectivas posições X e Y.
+1. Escreva um programa que leia do teclado um vetor de 10 posições. Escreva na tela  quantos valores pares foram armazenados nesse vetor.
+1. Faça um programa que receba do usuário um vetor X com 10 posições. Em seguida deverão ser impressos o maior e o menor elemento desse vetor.
+1. Faça um programa que preencha um vetor com 10 números reais. Em seguida, calcule e mostre na tela a quantidade de números negativos e a soma dos números positivos desse vetor.
+1. Faça um programa que receba do usuário dois arrays, `A` e `B`, com 10 números inteiros cada. Crie um novo array `C` calculando `C = A − B`. Mostre na tela os dados do array `C`.
+1. Faça um programa que preencha um vetor de tamanho 100 com os 100 primeiros números naturais que não são múltiplos de 7. Ao final, imprima esse vetor na tela.
+1. Leia um conjunto de números reais, armazenando-o em vetor. Em seguida, calcule o quadrado de cada elemento desse vetor armazenando esse resultado em outro vetor. Os conjuntos têm, no máximo, 20 elementos. Imprima os dois conjuntos de números.
+1. Faça um programa que leia um vetor de 10 posições. Verifique se existem valores iguais e os escreva na tela.
+1. Faça um programa para ler 10 números diferentes a serem armazenados em um vetor. Os números deverão ser armazenados no vetor na ordem em que forem lidos, sendo que, caso o usuário digite um número que já foi digitado anteriormente, o programa deverá pedir a ele para digitar outro número. Note que cada valor digitado pelo usuário deve ser pesquisado no vetor, verificando se ele existe entre os números que já foram fornecidos. Exiba na tela o vetor final que foi digitado.
+1. Faça um programa que calcule o desvio-padrão `d` de um vetor `V` contendo `n` números
+    $$ d = \sqrt{\frac{1}{n-1}\sum^{n-1}_{i=0}(V[i-m])}$$
+    em que m é a média desse vetor. Considere n = 10. O vetor v deve ser lido do teclado.
+1. Leia um vetor com 10 números de ponto flutuante. Em seguida, ordene os elementos desse vetor e imprima o vetor na tela.
+   ::: details 
+    ```c
+    #include <stdio.h>
 
-
-
+    int main(){
+        int vetor[10] = {9, 5, 7, 1, 2, 8, 4, 0, 3, 6};
+        // mostar original
+        for (int i = 0; i < 10; i++){
+            printf("%d ", vetor[i]);
+        }
+        printf("\n");
+    
+        for (int k = 0; k < 10; k++){        
+            // encontrar o menor valor e posicao no vetor
+            int menorValor = vetor[k];
+            int posicaoMenorValor = k;
+            for (int i = k; i < 10; i++){
+                if (vetor[i] < menorValor){
+                    menorValor = vetor[i];
+                    posicaoMenorValor = i;
+                }
+            }
+            //trocar menor valor e colocar na posição 0;
+            vetor[posicaoMenorValor] = vetor[k];
+            vetor[k] = menorValor;
+        }   
+        // mostar ordenado
+        for (int i = 0; i < 10; i++){
+            printf("%d ", vetor[i]);
+        }
+        printf("\n");
+        return 0;
+    }
+    ```
+    ::: 
 <!--
 1. Faça um programa que leia uma palavra de 10 letras e transforme todos os caracteres para maiúsculo.
 -->
@@ -327,8 +377,8 @@ star: true
             {-7,-8,-1000}     // 2,0     2,1       2,2
         };   
         int menorValor = mat[0][0];
-        for (size_t i = 0; i < count; i++){
-            for (size_t j = 0; j < count; j++){                
+        for (int i = 0; i < count; i++){
+            for (int j = 0; j < count; j++){                
                 if(mat[i][j]<menorValor){
                     menorValor = mat[i][j];
                 }
@@ -354,8 +404,8 @@ star: true
         int maiorValor = mat[0][0];
         int maiorValorI = 0;
         int maiorValorJ = 0;
-        for (size_t i = 0; i < count; i++){
-            for (size_t j = 0; j < count; j++){
+        for (int i = 0; i < count; i++){
+            for (int j = 0; j < count; j++){
                 //printf("Valor %d em mat[%d][%d] \n ", mat[i][j], i, j);
                 if(mat[i][j]>maiorValor){
                     maiorValor = mat[i][j];

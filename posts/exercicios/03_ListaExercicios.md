@@ -486,7 +486,7 @@ star: true
 
 Recursão
 1. Escreva uma função recursiva que calcule a soma dos primeiros `n` cubos:
-    $$ S = 1^3 + 2^3 + ... + n^3 $$ 
+    $$S = 1^3 + 2^3 + ... + n^3$$ 
 2. Crie uma função recursiva que receba um número inteiro N e retorne o somatório dos números de 1 a N.
 3. Crie uma função recursiva que receba um número inteiro N e imprima todos os números naturais de 0 até N em ordem crescente.
 4. Crie uma função recursiva que receba um número inteiro N e imprima todos os números naturais de 0 até N em ordem decrescente.
@@ -494,7 +494,7 @@ Recursão
 6. Crie uma função recursiva que retorne a média dos elementos de um vetor de inteiros.
 7. Escreva uma função recursiva que receba por parâmetro dois valores inteiros `x` e `y` e calcule e retorne o resultado de $x^y$ para o programa principal.
 8. A multiplicação de dois números inteiros pode ser feita através de somas sucessivas (por exemplo, 2 * 3 = 2 + 2 + 2). Crie uma função recursiva que calcule a multiplicação por somas sucessivas de dois inteiros.
-9. Escreva uma função recursiva que receba um número inteiro positivo ´. Calcule e retorne o seu fatorial n!:
+9. Escreva uma função recursiva que receba um número inteiro positivo. Calcule e retorne o seu fatorial n!:
     $$n! = n \times (n – 1) \times (n – 2) \times ... \times 1$$
 10. Escreva uma função recursiva que receba um número inteiro, maior ou igual a 
 zero, e retorne o enésimo termo da sequência de Fibonacci. Essa sequência começa no termo de ordem zero e, a partir do segundo termo, seu valor é dado pela soma dos dois termos anteriores. Alguns termos dessa sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
@@ -506,10 +506,10 @@ Exemplo:
     ```
 12.  Escreva uma função recursiva que receba um valor inteiro em base decimal e o imprima em base binária.
 13.  Faça uma função recursiva que calcule o valor da série S descrita a seguir para um valor n maior do que zero a ser fornecido como parâmetro para a mesma:
-    $$ S = 2+\frac{5}{2}+\frac{10}{3}+...+\frac{1+n^2}{n} $$
+    $$S = 2+\frac{5}{2}+\frac{10}{3}+ ... +\frac{1+n^2}{n}$$
 14.  Crie uma função recursiva que retorne o menor elemento em um vetor.
 15.  Em matemática, o número harmônico designado por Hn define-se como o enésimo termo da série harmônica. Ou seja: 
-    $$ H_n = 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+...++\frac{1}{n}$$
+    $$H_n = 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+ ... ++\frac{1}{n}$$
     Escreva uma função recursiva que calcule o valor de qualquer $H_n$.
 ## Referências
 

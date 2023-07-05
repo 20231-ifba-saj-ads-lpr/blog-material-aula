@@ -482,6 +482,7 @@ star: true
     $$\begin{bmatrix}5 & -8 & 10\\1 & 2 & 15\\25 & 10 & 7 \end{bmatrix}$$
     deverá gerar o vetor
     $$\begin{bmatrix}31 & 4 & 32\end{bmatrix}$$
+
 ## Recursividade
 
 Recursão
@@ -511,6 +512,16 @@ Exemplo:
 15.  Em matemática, o número harmônico designado por Hn define-se como o enésimo termo da série harmônica. Ou seja: 
     $$H_n = 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+ ... ++\frac{1}{n}$$
     Escreva uma função recursiva que calcule o valor de qualquer $H_n$.
+
+## Estruturas
+
+1. Implemente um programa que leia o nome, a idade e o endereço de uma pessoa e armazene esses dados em uma estrutura. Em seguida, imprima na tela os dados da estrutura lida.
+2. Crie uma estrutura para representar as coordenadas de um ponto no plano (posições X e Y). Em seguida, declare e leia do teclado um ponto e exiba a distância dele até a origem das coordenadas, isto é, a posição (0,0).
+3. Crie uma estrutura para representar as coordenadas de um ponto no plano (posições X e Y). Em seguida, declare e leia do teclado dois pontos e exiba a distância entre eles.
+4. Crie uma estrutura chamada Retângulo. Essa estrutura deverá conter o ponto superior esquerdo e o ponto inferior direito do retângulo. Cada ponto é definido por uma estrutura Ponto, a qual contém as posições X e Y. Faça um programa que declare e leia uma estrutura Retângulo e exiba a área e o comprimento da diagonal e o perímetro desse retângulo.
+5. Usando a estrutura Retângulo do exercício anterior, faça um programa que declare e leia uma estrutura Retângulo e um Ponto, e informe se esse ponto está ou não dentro do retângulo.
+
+
 ## Referências
 
 <!-- @include: ../../bib/bib.md -->

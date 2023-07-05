@@ -483,9 +483,49 @@ star: true
     deverá gerar o vetor
     $$\begin{bmatrix}31 & 4 & 32\end{bmatrix}$$
 
-## Recursividade
+## Funções
 
-Recursão
+### Passagem por valor
+
+1. Escreva uma função que receba por parâmetro dois números e retorne o maior deles.
+2. Faça uma função que receba um número inteiro de 1 a 12 e imprima em tela o mês e a sua quantidade de dias de acordo com o número digitado pelo usuário. Exemplo: Entrada = 4. Saída = abril.
+3. Escreva uma função que receba por parâmetro uma temperatura em graus Fahrenheit e a retorne convertida em graus Celsius. A fórmula de conversão é: $C = (F - 32.0) \times (5.0/9.0)$, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+4. Escreva uma função que receba por parâmetro a altura e o raio de um cilindro circular e retorne o volume desse cilindro. O volume de um cilindro circular é calculado por meio da seguinte fórmula:    $ V = \pi \times raio^2 \times altura,$ em que $\pi = 3.1414592$
+5. Escreva uma função para o cálculo do volume de uma esfera $ V = \frac{4}{3\pi} \times r^3$, em que $ \pi = 3.1414592$ valor do raio r deve ser passado por parâmetro.
+6. Escreva uma função que receba o peso (quilos) e a altura (metros) de uma pessoa. Calcule e retorne o IMC (índice de massa corporal) dessa pessoa: $IMC = \frac{peso}{altura^2}$
+7. Elabore uma função que receba três números inteiros como parâmetro, representando horas, minutos e segundos. A função deve retornar esse horário convertido em segundos.
+8. Elabore uma função para verificar se um número é um quadrado perfeito. Um quadrado perfeito é um número inteiro não negativo que pode ser expresso como o quadrado de outro número inteiro. Exemplos: 1, 4, 9.
+9. Elabore uma função que receba três notas de um aluno como parâmetros e uma letra. Se a letra for "A", a função deverá calcular a média aritmética das notas do aluno; se for "P", deverá calcular a média ponderada, com pesos 5, 3 e 2. Retorne a média calculada para o programa principal.
+10. Escreva uma função que receba dois valores numéricos e um símbolo. Esse símbolo representará a operação que se deseja efetuar com os números. Assim, se o símbolo for "+", deverá ser realizada uma adição, se for "−", uma subtração, se for "/", uma divisão, e, se for "*", será efetuada uma multiplicação. Retorne o resulta- do da operação para o programa principal.
+11. Escreva uma função que receba por parâmetros dois valores inteiros x e y e calcule e retorne o resultado de x y para o programa principal. Não use nenhuma função pronta para isso.
+12. Escreva uma função que receba um número inteiro positivo e retorne o maior fator primo desse número.
+13. Escreva uma função que receba um número inteiro positivo n. Calcule e retorne o somatório de 1 até n: 1 + 2 + 3 + ... + n.
+14. Escreva uma função que receba um número inteiro positivo n. Calcule e retorne o seu fatorial $n!$: $n! = n \times ( – 1) \times (n – 2) \times ... \times 1$.
+15. Elabore uma função que receba como parâmetro um valor inteiro n e gere como saída n linhas com pontos de exclamação, conforme o exemplo a seguir, em que usamos n = 5:
+    ```console
+    !
+    !!
+    !!!
+    !!!!
+    !!!!!
+    ```
+16. Elabore uma função que receba como parâmetro um valor inteiro n e gere como saída um triângulo lateral formado por asteriscos conforme o exemplo a seguir, em que usamos n = 4:
+    ```console
+    *
+    **
+    ***
+    ****
+    ***
+    **
+    *
+    ```
+17. Faça uma função que receba um inteiro N como parâmetro. Calcule e retorne o resultado da seguinte série S: $S=\frac {2}{4}+{\frac {3}{2}}+{\frac {5}{3}}+{\frac {7}{4}}+{\frac {9}{5}}+\cdots +{\frac {1}{55}}$
+18. Faça uma função que receba como parâmetro o valor de um ângulo em graus e calcule o valor do seno desse ângulo usando a sua respectiva série de Taylor: em que x é o valor do ângulo em radianos. Considere π = 3.1414592 e n variando de 0 até 5.
+19. Faça uma função que receba como parâmetro o valor de um ângulo em graus e calcule o valor do cosseno desse ângulo usando a sua respectiva série de Taylor: em que x é o valor do ângulo em radianos. Considerar π = 3.1414592 e n variando de 0 até 5.
+20. Faça uma função que calcule e retorne o número neperiano e, e = 2,71828183, usando a série a seguir: A função deve ter como parâmetro o número de termos que serão somados, N. Note que quanto maior esse número, mais próxima do valor e estará a resposta.
+
+### Recursividade
+
 1. Escreva uma função recursiva que calcule a soma dos primeiros `n` cubos:
     $$S = 1^3 + 2^3 + ... + n^3$$ 
 2. Crie uma função recursiva que receba um número inteiro N e retorne o somatório dos números de 1 a N.
@@ -524,7 +564,7 @@ Exemplo:
 7. Crie uma estrutura representando uma hora. Essa estrutura deve conter os campos hora, minuto e segundo. Agora, escreva um programa que leia um vetor de cinco posições dessa estrutura e imprima a maior hora.
 8. Crie uma estrutura capaz de armazenar o nome e a data de nascimento de uma pessoa. Agora, escreva um programa que leia os dados de seis pessoas. Calcule e exiba os nomes da pessoa mais nova e da mais velha.
 9. Crie uma estrutura representando um atleta. Essa estrutura deve conter o nome do atleta, seu esporte, idade e altura. Agora, escreva um programa que leia os dados de cinco atletas. Calcule e exiba os nomes do atleta mais alto e do mais velho.
-10. Usando a estrutura “atleta” do exercício anterior, escreva um programa que leia os dados de cinco atletas e os exiba por ordem de idade, do mais velho para o mais novo.
+10. Usando a estrutura "atleta" do exercício anterior, escreva um programa que leia os dados de cinco atletas e os exiba por ordem de idade, do mais velho para o mais novo.
 11. Escreva um programa que contenha uma estrutura representando uma data válida. Essa estrutura deve conter os campos dia, mês e ano. Em seguida, leia duas da- tas e armazene nessa estrutura. Calcule e exiba o número de dias que decorreram entre as duas datas.
 12. Crie uma enumeração representando os dias da semana. Agora, escreva um programa que leia um valor inteiro do teclado e exiba o dia da semana correspondente.
 13. Crie uma enumeração representando os meses do ano. Agora, escreva um programa que leia um valor inteiro do teclado e exiba o nome do mês correspondente e quantos dias ele possui.

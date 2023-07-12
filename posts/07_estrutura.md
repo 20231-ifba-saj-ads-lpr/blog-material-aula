@@ -12,6 +12,7 @@ order: 6
 
 exemplo de código
 
+Escrevendo data
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,4 +49,45 @@ int main(){
 
     return 0;
 }
+```
+
+
+comparando data
+
+```c
+#include <stdio.h>
+//estrutura para armazenar uma data (dd/mm/yyyy)
+struct data{
+    int dia;
+    int mes;
+    int ano;
+};
+
+int maiorData(struct data data1, struct data data2){
+    //7/6/2023 -> 20230000 + 600 + 7
+    int intData1 =  (data1.ano * 10000) + (data1.mes * 100) + data1.dia;
+    int intData2 =  (data2.ano * 10000) + (data2.mes * 100) + data2.dia;
+    if(intData1 > intData2){
+        return 1;   
+    }else{
+        return 0;
+    }
+}
+struct data novaData(int dia, int mes, int ano){
+    struct data dataTemp;
+    dataTemp.dia = dia;   
+    dataTemp.mes = mes;
+    dataTemp.ano = ano;
+    return dataTemp;
+}
+
+int main(){    
+    printf("compara datas %d \n", maiorData(
+        novaData(19,7,2022),
+        novaData(10,7,2023)
+    ));
+
+    return 0;
+}
+
 ```

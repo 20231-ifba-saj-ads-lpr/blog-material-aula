@@ -571,6 +571,14 @@ Exemplo:
 14. Crie uma enumeração representando os itens de uma lista de compras. Agora, escreva um programa que leia um valor inteiro do teclado e exiba o nome do item comprado e o seu preço.
 15. Crie uma união contendo dois tipos básicos diferentes. Agora, escreva um programa que inicialize um dos tipos dessa união e exiba em tela o valor do outro tipo.
 
+## Ponteiros
+
+1. Escreva um programa que contenha duas variáveis inteiras. Compare seus endereços e exiba o maior endereço.
+1. Escreva um programa que contenha duas variáveis inteiras. Leia essas variáveis do teclado. Em seguida, compare seus endereços e exiba o conteúdo do maior endereço.
+1. Crie um programa que contenha um array de float contendo 10 elementos. Imprima o endereço de cada posição desse array.
+1. Crie um programa que contenha uma matriz de float contendo três linhas e três colunas. Imprima o endereço de cada posição dessa matriz.
+1. Crie um programa que contenha um array de inteiros contendo cinco elementos. Utilizando apenas aritmética de ponteiros, leia esse array do teclado e imprima o dobro de cada valor lido.
+
 ## Referências
 
 <!-- @include: ../../bib/bib.md -->
